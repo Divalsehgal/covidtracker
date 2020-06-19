@@ -5,8 +5,8 @@ import covid from "./images/image.png";
 import { fetchData } from "./api";
 export default class App extends Component {
   state = {
-    data: {},
-    country: "",
+    data: {}, 
+    country: " ",
   };
   async componentDidMount() {
     const data = await fetchData();
